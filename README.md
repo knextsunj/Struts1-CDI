@@ -1,4 +1,4 @@
-struts-cdi
+Struts1-cdi
 ==========
 CDI support for Apache Struts 1.x
 
