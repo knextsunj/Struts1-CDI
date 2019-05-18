@@ -54,6 +54,39 @@ JNDI locations:
 This could be provided by your application (by bundling a CDI implementation with your app) 
 or by the container that the application is deployed to.
 
+How to use with the ayg versions of struts 1.3.x from https://github.com/albfernandez/struts1
+----------------------------------------------------------------------------------------------
+Download the distribution in zip format from the following link:
+https://github.com/albfernandez/struts1/releases
+
+Then for each individual jar in the distribution, run the following commands:
+
+mvn install:install-file -Dfile=<your_file_path>/struts-core-1.3.10-ayg-03.jar -DgroupId=org.apache.struts
+	-DartifactId=struts-core -Dversion=1.3.10-ayg-03 -Dpackaging=jar
+
+mvn install:install-file -Dfile=<your_file_path>/struts-el-1.3.10-ayg-03.jar -DgroupId=org.apache.struts
+	-DartifactId=struts-el -Dversion=1.3.10-ayg-03 -Dpackaging=jar
+
+mvn install:install-file -Dfile=<your_file_path>/struts-extras-1.3.10-ayg-03.jar -DgroupId=org.apache.struts
+	-DartifactId=struts-extras -Dversion=1.3.10-ayg-03 -Dpackaging=jar
+
+mvn install:install-file -Dfile=<your_file_path>/struts-faces-1.3.10-ayg-03.jar -DgroupId=org.apache.struts
+	-DartifactId=struts-faces -Dversion=1.3.10-ayg-03 -Dpackaging=jar
+
+mvn install:install-file -Dfile=<your_file_path>/struts-mailreader-dao-1.3.10-ayg-03.jar -DgroupId=org.apache.struts
+	-DartifactId=struts-mailreader-dao -Dversion=1.3.10-ayg-03 -Dpackaging=jar
+
+mvn install:install-file -Dfile=<your_file_path>/struts-scripting-1.3.10-ayg-03.jar -DgroupId=org.apache.struts
+	-DartifactId=struts-scripting -Dversion=1.3.10-ayg-03 -Dpackaging=jar
+
+mvn install:install-file -Dfile=<your_file_path>/struts-taglib-1.3.10-ayg-03.jar -DgroupId=org.apache.struts
+	-DartifactId=struts-taglib -Dversion=1.3.10-ayg-03 -Dpackaging=jar
+
+mvn install:install-file -Dfile=<your_file_path>/struts-tiles-1.3.10-ayg-03.jar -DgroupId=org.apache.struts
+	-DartifactId=struts-tiles -Dversion=1.3.10-ayg-03 -Dpackaging=jar
+        
+Here <your_file_path> points to the directory where you unzipped the distribution.After this add the above struts ayg releases to your project's pom.xml
+
 Will ActionForms be supported as well?
 --------------------------------------
 There is no support currently for Action Forms
