@@ -59,7 +59,7 @@ How to use with the ayg versions of struts 1.3.x from https://github.com/albfern
 Download the distribution in zip format from the following link:
 https://github.com/albfernandez/struts1/releases
 
-Then for each individual jar in the distribution, run the following commands:
+Then for each individual jar in the distribution, run the following commands(replace the jar versions with whatever version you are using from the above fork):
 
 	mvn install:install-file -Dfile=<your_file_path>/struts-core-1.3.10-ayg-03.jar -DgroupId=org.apache.struts
 		-DartifactId=struts-core -Dversion=1.3.10-ayg-03 -Dpackaging=jar
