@@ -1,4 +1,4 @@
-Struts1-cdi
+struts1-cdi
 ==========
 CDI support for Apache Struts 1.x
 
@@ -7,7 +7,7 @@ framework. It is intended to support the struts 1.3.x versions released from the
 
 https://github.com/albfernandez/struts1
 
-What is struts-cdi
+What is struts1-cdi
 -------------
 This is a java library for Struts 1.x that enables @Inject style dependency injection (DI) and the 
 usage of contextual instances supported by the CDI specification.
